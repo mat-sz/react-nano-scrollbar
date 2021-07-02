@@ -1,0 +1,71 @@
+.react-tiny-scrollbar {
+  &-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+  }
+
+  &-track-x {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 12px;
+    bottom: 0;
+    z-index: 9999;
+
+    .react-tiny-scrollbar-x {
+      position: absolute;
+      bottom: 2px;
+      height: 7px;
+      border-radius: 5px;
+      background: #11111a;
+      opacity: 0.5;
+      transition: 0.1s opacity, height ease-in-out;
+      cursor: pointer;
+    }
+
+    &:hover .react-tiny-scrollbar-x,
+    .react-tiny-scrollbar-active {
+      height: 10px;
+      opacity: 1;
+    }
+  }
+
+  &-track-y {
+    position: absolute;
+    right: 0;
+    width: 12px;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+
+    .react-tiny-scrollbar-y {
+      position: absolute;
+      right: 2px;
+      width: 7px;
+      border-radius: 5px;
+      background: #11111a;
+      opacity: 0.5;
+      transition: 0.1s opacity, width ease-in-out;
+      cursor: pointer;
+    }
+
+    &:hover .react-tiny-scrollbar-y,
+    .react-tiny-scrollbar-active {
+      width: 10px;
+      opacity: 1;
+    }
+  }
+
+  &-content {
+    overflow: auto;
+
+    /* Hide scrollbars */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+
+    &::-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
+    }
+  }
+}

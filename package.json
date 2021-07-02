@@ -1,0 +1,86 @@
+{
+  "version": "0.0.1",
+  "license": "BSD-3-Clause-Clear",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mat-sz/react-tiny-scrollbar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mat-sz/react-tiny-scrollbar/issues"
+  },
+  "homepage": "https://github.com/mat-sz/react-tiny-scrollbar",
+  "prettier": {
+    "tabWidth": 2,
+    "singleQuote": true,
+    "semi": true,
+    "arrowParens": "avoid"
+  },
+  "name": "react-tiny-scrollbar",
+  "author": "Mat Sz <contact@matsz.dev>",
+  "module": "dist/react-tiny-scrollbar.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/react-tiny-scrollbar.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/react-tiny-scrollbar.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "keywords": [
+    "react",
+    "react-component",
+    "react-scroll",
+    "scroll",
+    "scrollbar",
+    "scroll bar",
+    "scroll-bar",
+    "scrolling",
+    "mouse",
+    "react-scrollbar",
+    "library",
+    "typescript"
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^5.0.1",
+    "@types/react": "^17.0.13",
+    "@types/react-dom": "^17.0.8",
+    "cssnano": "^5.0.6",
+    "husky": "^7.0.0",
+    "postcss": "^8.3.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup-plugin-postcss": "^4.0.0",
+    "sass": "^1.35.1",
+    "size-limit": "^5.0.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
+  }
+}
