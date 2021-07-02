@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { ScrollArea } from '../src';
+import { ScrollArea } from '../src/ScrollArea';
 
 describe('it', () => {
   it('renders without crashing', () => {
