@@ -28,28 +28,28 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mat-sz/react-tiny-scrollbar.git"
+    "url": "https://github.com/mat-sz/react-nano-scrollbar.git"
   },
   "bugs": {
-    "url": "https://github.com/mat-sz/react-tiny-scrollbar/issues"
+    "url": "https://github.com/mat-sz/react-nano-scrollbar/issues"
   },
-  "homepage": "https://github.com/mat-sz/react-tiny-scrollbar",
+  "homepage": "https://github.com/mat-sz/react-nano-scrollbar",
   "prettier": {
     "tabWidth": 2,
     "singleQuote": true,
     "semi": true,
     "arrowParens": "avoid"
   },
-  "name": "react-tiny-scrollbar",
+  "name": "react-nano-scrollbar",
   "author": "Mat Sz <contact@matsz.dev>",
-  "module": "dist/react-tiny-scrollbar.esm.js",
+  "module": "dist/react-nano-scrollbar.esm.js",
   "size-limit": [
     {
-      "path": "dist/react-tiny-scrollbar.cjs.production.min.js",
+      "path": "dist/react-nano-scrollbar.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/react-tiny-scrollbar.esm.js",
+      "path": "dist/react-nano-scrollbar.esm.js",
       "limit": "10 KB"
     }
   ],

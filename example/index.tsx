@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div>
       <section>
-        <h1>react-tiny-scrollbar</h1>
+        <h1>react-nano-scrollbar</h1>
       </section>
       <section>
         <h2>Both vertical and horizontal scrollbars:</h2>

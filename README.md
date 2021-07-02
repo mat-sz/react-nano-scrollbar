@@ -1,46 +1,46 @@
 <h1 align="center">
-react-tiny-scrollbar
+react-nano-scrollbar
 </h1>
 
 <p align="center">
-<img alt="workflow" src="https://img.shields.io/github/workflow/status/mat-sz/react-tiny-scrollbar/CI">
-<a href="https://npmjs.com/package/react-tiny-scrollbar">
-<img alt="npm" src="https://img.shields.io/npm/v/react-tiny-scrollbar">
-<img alt="npm" src="https://img.shields.io/npm/dw/react-tiny-scrollbar">
-<img alt="NPM" src="https://img.shields.io/npm/l/react-tiny-scrollbar">
+<img alt="workflow" src="https://img.shields.io/github/workflow/status/mat-sz/react-nano-scrollbar/CI">
+<a href="https://npmjs.com/package/react-nano-scrollbar">
+<img alt="npm" src="https://img.shields.io/npm/v/react-nano-scrollbar">
+<img alt="npm" src="https://img.shields.io/npm/dw/react-nano-scrollbar">
+<img alt="NPM" src="https://img.shields.io/npm/l/react-nano-scrollbar">
 </a>
 </p>
 
-**react-tiny-scrollbar** is a minimalist scrollbar library for React, inspired by [perfect-scrollbar](https://github.com/mdbootstrap/perfect-scrollbar), implemented inside of React component with no external dependencies.
+**react-nano-scrollbar** is a minimalist scrollbar library for React, inspired by [perfect-scrollbar](https://github.com/mdbootstrap/perfect-scrollbar), implemented inside of React component with no external dependencies.
 
 ## Installation
 
-Install `react-tiny-scrollbar` with either npm or yarn:
+Install `react-nano-scrollbar` with either npm or yarn:
 
 ```
-yarn add react-tiny-scrollbar
+yarn add react-nano-scrollbar
 # or
-npm install react-tiny-scrollbar
+npm install react-nano-scrollbar
 ```
 
 Then include the CSS with:
 
 ```css
 /* In your CSS/SCSS file: */
-@import 'react-tiny-scrollbar/dist/index.css';
+@import 'react-nano-scrollbar/dist/index.css';
 ```
 
 or:
 
 ```js
 // In your JS/TS file (assuming your bundler supports loading CSS files):
-import 'react-tiny-scrollbar/dist/index.css';
+import 'react-nano-scrollbar/dist/index.css';
 ```
 
 ## Example usage
 
 ```tsx
-import { ScrollArea } from 'react-tiny-scrollbar';
+import { ScrollArea } from 'react-nano-scrollbar';
 
 return (
   <ScrollArea className="example">

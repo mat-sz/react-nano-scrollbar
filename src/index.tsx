@@ -198,17 +198,17 @@ export const ScrollArea: React.FC<ScrollAreaProps> = ({
 
   return (
     <div
-      className={'react-tiny-scrollbar-wrapper ' + (className ? className : '')}
+      className={'react-nano-scrollbar-wrapper ' + (className ? className : '')}
       ref={areaRef}
     >
-      <div className="react-tiny-scrollbar-content" ref={contentRef}>
+      <div className="react-nano-scrollbar-content" ref={contentRef}>
         {children}
       </div>
-      <div className="react-tiny-scrollbar-track-x" ref={barTrackXRef}>
-        <div className="react-tiny-scrollbar-x" ref={barXRef}></div>
+      <div className="react-nano-scrollbar-track-x" ref={barTrackXRef}>
+        <div className="react-nano-scrollbar-x" ref={barXRef}></div>
       </div>
-      <div className="react-tiny-scrollbar-track-y" ref={barTrackYRef}>
-        <div className="react-tiny-scrollbar-y" ref={barYRef}></div>
+      <div className="react-nano-scrollbar-track-y" ref={barTrackYRef}>
+        <div className="react-nano-scrollbar-y" ref={barYRef}></div>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-.react-tiny-scrollbar {
+.react-nano-scrollbar {
   &-wrapper {
     position: relative;
     overflow: hidden;
@@ -13,7 +13,7 @@
     bottom: 0;
     z-index: 9999;
 
-    .react-tiny-scrollbar-x {
+    .react-nano-scrollbar-x {
       position: absolute;
       bottom: 2px;
       height: 7px;
@@ -24,8 +24,8 @@
       cursor: pointer;
     }
 
-    &:hover .react-tiny-scrollbar-x,
-    .react-tiny-scrollbar-active {
+    &:hover .react-nano-scrollbar-x,
+    .react-nano-scrollbar-active {
       height: 10px;
       opacity: 1;
     }
@@ -39,7 +39,7 @@
     bottom: 0;
     z-index: 9999;
 
-    .react-tiny-scrollbar-y {
+    .react-nano-scrollbar-y {
       position: absolute;
       right: 2px;
       width: 7px;
@@ -50,8 +50,8 @@
       cursor: pointer;
     }
 
-    &:hover .react-tiny-scrollbar-y,
-    .react-tiny-scrollbar-active {
+    &:hover .react-nano-scrollbar-y,
+    .react-nano-scrollbar-active {
       width: 10px;
       opacity: 1;
     }
