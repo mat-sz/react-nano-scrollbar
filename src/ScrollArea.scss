@@ -5,6 +5,16 @@
     display: flex;
   }
 
+  &-x,
+  &-y {
+    position: absolute;
+    border-radius: 5px;
+    background: #11111a;
+    opacity: 0.5;
+    transition: 0.1s opacity, width, height ease-in-out;
+    cursor: pointer;
+  }
+
   &-track-x {
     position: absolute;
     left: 0;
@@ -14,14 +24,8 @@
     z-index: 9999;
 
     .react-nano-scrollbar-x {
-      position: absolute;
       bottom: 2px;
       height: 7px;
-      border-radius: 5px;
-      background: #11111a;
-      opacity: 0.5;
-      transition: 0.1s opacity, height ease-in-out;
-      cursor: pointer;
     }
 
     &:hover .react-nano-scrollbar-x,
@@ -40,14 +44,8 @@
     z-index: 9999;
 
     .react-nano-scrollbar-y {
-      position: absolute;
       right: 2px;
       width: 7px;
-      border-radius: 5px;
-      background: #11111a;
-      opacity: 0.5;
-      transition: 0.1s opacity, width ease-in-out;
-      cursor: pointer;
     }
 
     &:hover .react-nano-scrollbar-y,
