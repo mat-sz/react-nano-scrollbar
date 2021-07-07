@@ -23,6 +23,10 @@ const App = () => {
         <h2>Horizontal scrollbar only:</h2>
         <Example hideScrollbarY />
       </section>
+      <section>
+        <h2>Autohide disabled:</h2>
+        <Example autohide={false} />
+      </section>
     </div>
   );
 };
