@@ -75,9 +75,9 @@ export const ScrollArea: React.FC<ScrollAreaProps> = ({
       initScrollLeft = content.scrollLeft;
 
       if (bar === 'x') {
-        barX.classList.add('scrollarea-bar-active');
+        barX.classList.add('react-nano-scrollbar-active');
       } else {
-        barY.classList.add('scrollarea-bar-active');
+        barY.classList.add('react-nano-scrollbar-active');
       }
     };
 
@@ -99,8 +99,8 @@ export const ScrollArea: React.FC<ScrollAreaProps> = ({
     const onEndDrag = () => {
       dragging = undefined;
 
-      barX.classList.remove('scrollarea-bar-active');
-      barY.classList.remove('scrollarea-bar-active');
+      barX.classList.remove('react-nano-scrollbar-active');
+      barY.classList.remove('react-nano-scrollbar-active');
     };
 
     const handleMouseMove = (e: MouseEvent) => {
