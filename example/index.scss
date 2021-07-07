@@ -15,7 +15,9 @@ section {
 
 .example {
   max-height: 200px;
-  max-width: 500px;
+  width: 500px;
+  max-width: 80vw;
+  margin: 0 auto;
   background: #ccc;
 
   .react-nano-scrollbar-content p {
