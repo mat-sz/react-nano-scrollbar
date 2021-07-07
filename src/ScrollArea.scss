@@ -10,7 +10,6 @@
     position: absolute;
     border-radius: 5px;
     background: #11111a;
-    opacity: 0.5;
     transition: 0.1s opacity, width, height ease-in-out;
     cursor: pointer;
   }
@@ -22,16 +21,20 @@
     height: 12px;
     bottom: 0;
     z-index: 9999;
+    opacity: 0.5;
+
+    &:hover,
+    &.react-nano-scrollbar-active {
+      opacity: 1 !important;
+
+      .react-nano-scrollbar-x {
+        height: 10px;
+      }
+    }
 
     .react-nano-scrollbar-x {
       bottom: 2px;
       height: 7px;
-    }
-
-    &:hover .react-nano-scrollbar-x,
-    .react-nano-scrollbar-active {
-      height: 10px;
-      opacity: 1;
     }
   }
 
@@ -42,16 +45,20 @@
     top: 0;
     bottom: 0;
     z-index: 9999;
+    opacity: 0.5;
+
+    &:hover,
+    &.react-nano-scrollbar-active {
+      opacity: 1 !important;
+
+      .react-nano-scrollbar-y {
+        width: 10px;
+      }
+    }
 
     .react-nano-scrollbar-y {
       right: 2px;
       width: 7px;
-    }
-
-    &:hover .react-nano-scrollbar-y,
-    .react-nano-scrollbar-active {
-      width: 10px;
-      opacity: 1;
     }
   }
 
@@ -82,7 +89,7 @@
     .react-nano-scrollbar {
       &-track-x,
       &-track-y {
-        opacity: 1;
+        opacity: 0.5;
       }
     }
   }
