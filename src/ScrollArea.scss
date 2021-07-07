@@ -67,3 +67,23 @@
     }
   }
 }
+
+.react-nano-scrollbar-autohide {
+  .react-nano-scrollbar {
+    &-track-x,
+    &-track-y {
+      opacity: 0;
+      transition: 0.1s opacity, width, height ease-in-out;
+    }
+  }
+
+  &:hover,
+  &.react-nano-scrollbar-moving {
+    .react-nano-scrollbar {
+      &-track-x,
+      &-track-y {
+        opacity: 1;
+      }
+    }
+  }
+}

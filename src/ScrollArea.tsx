@@ -4,13 +4,15 @@ export interface ScrollAreaProps {
   className?: string;
   hideScrollbarX?: boolean;
   hideScrollbarY?: boolean;
+  autohide?: boolean;
 }
 
 export const ScrollArea: React.FC<ScrollAreaProps> = ({
   className,
   children,
   hideScrollbarX,
-  hideScrollbarY
+  hideScrollbarY,
+  autohide = true
 }) => {
   const areaRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -198,7 +200,11 @@ export const ScrollArea: React.FC<ScrollAreaProps> = ({
 
   return (
     <div
-      className={'react-nano-scrollbar-wrapper ' + (className ? className : '')}
+      className={
+        'react-nano-scrollbar-wrapper ' +
+        (autohide ? 'react-nano-scrollbar-autohide ' : '') +
+        (className ? className : '')
+      }
       ref={areaRef}
     >
       <div className="react-nano-scrollbar-content" ref={contentRef}>
