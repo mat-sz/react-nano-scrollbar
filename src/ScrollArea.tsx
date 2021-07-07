@@ -35,6 +35,8 @@ export const ScrollArea: React.FC<ScrollAreaProps> = ({
       return;
     }
 
+    let timeout: any = undefined;
+
     const recalculateBarX = () => {
       const areaRect = area.getBoundingClientRect();
       const width = Math.min(1.0, areaRect.width / content.scrollWidth);
@@ -57,6 +59,11 @@ export const ScrollArea: React.FC<ScrollAreaProps> = ({
     };
 
     const onScroll = () => {
+      area.classList.add('react-nano-scrollbar-moving');
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        area.classList.remove('react-nano-scrollbar-moving');
+      }, 1000);
       recalculateBarX();
       recalculateBarY();
     };
