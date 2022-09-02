@@ -27,6 +27,10 @@ const App = () => {
         <h2>Autohide disabled:</h2>
         <Example autohide={false} />
       </section>
+      <section>
+        <h2>Horizontal scrolling as default:</h2>
+        <Example horizontal />
+      </section>
     </div>
   );
 };

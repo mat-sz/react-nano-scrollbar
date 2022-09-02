@@ -6,6 +6,7 @@ export interface ScrollAreaProps {
   hideScrollbarY?: boolean;
   autohide?: boolean;
   children?: React.ReactNode;
+  horizontal?: boolean;
 }
 
 export const ScrollArea: React.FC<ScrollAreaProps> = ({
@@ -13,7 +14,8 @@ export const ScrollArea: React.FC<ScrollAreaProps> = ({
   children,
   hideScrollbarX,
   hideScrollbarY,
-  autohide = true
+  autohide = true,
+  horizontal = false
 }) => {
   const areaRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -172,8 +174,27 @@ export const ScrollArea: React.FC<ScrollAreaProps> = ({
       onStartDrag('y', touch.clientX, touch.clientY);
     };
 
+    const onWheel = (e: WheelEvent) => {
+      if (horizontal) {
+        e.preventDefault();
+
+        if (!e.shiftKey) {
+          content.scrollBy({
+            behavior: 'auto',
+            left: e.deltaY
+          });
+        } else {
+          content.scrollBy({
+            behavior: 'auto',
+            top: e.deltaY
+          });
+        }
+      }
+    };
+
     onScroll();
     content.addEventListener('scroll', onScroll);
+    content.addEventListener('wheel', onWheel);
 
     barX.addEventListener('mousedown', onMouseDownX);
     barX.addEventListener('touchstart', onTouchStartX);
