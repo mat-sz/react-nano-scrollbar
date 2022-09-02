@@ -5,6 +5,7 @@ export interface ScrollAreaProps {
   hideScrollbarX?: boolean;
   hideScrollbarY?: boolean;
   autohide?: boolean;
+  children?: React.ReactNode;
 }
 
 export const ScrollArea: React.FC<ScrollAreaProps> = ({
